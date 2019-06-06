@@ -13,3 +13,10 @@ function deliverMessage() {
  let textValue = text.value; 
  message.innerHTML = textValue;
 }
+
+clear.addEventListener('click', clearField);
+
+function clearField () {
+    message.innerHTML = '';
+    text.value ='';
+}
